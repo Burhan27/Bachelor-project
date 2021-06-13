@@ -1,0 +1,12 @@
+{
+    "processors": [
+      {
+        "set": {
+          "description": "If 'valid_to' is infinity change it to 01-01-9999",
+          "if": "ctx.valid_to == 'infinity'",
+          "field": "valid_to",
+          "value": "9999-01-01 22:15:50.145883+02"
+        }
+      }
+    ]
+  }

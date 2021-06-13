@@ -1,0 +1,29 @@
+[
+    {
+      "hostnames": [
+        "ip",
+        "test-ip",
+        "preprod-ip",
+        "indberetning",
+        "indberetning-qa",
+        "localhost"
+      ],
+      "dataexchangeLabels": {
+        "DataExchange": {
+          "pageTitle": "Dataudveksling",
+          "addButton": "Tilføj ny dataudveksling..",
+          "addNewPageTitle": "Ny dataudvelksling",
+          "addNewPlaceholder": "Dataudvekslingens navn",
+          "metadata": true
+        },
+        "Validation": {
+          "pageTitle": "Valideringer",
+          "addButton": "Tilføj ny validering..",
+          "addNewPageTitle": "Ny validering",
+          "addNewPlaceholder": "Valideringens navn",
+          "metadata": false
+        }
+      }
+    }
+  ]
+  

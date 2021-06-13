@@ -1,0 +1,68 @@
+{
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "version": {
+            "type": "integer"
+        },
+        "report_id": {
+            "type": "text"
+        },
+        "component_ref": {
+            "type": "text"
+        },
+        "title": {
+            "type": "text"
+        },
+        "description": {
+            "type": "text"
+        },
+        "report_type": {
+            "type": "keyword"
+        },
+        "category": {
+            "type": "keyword"
+        },
+        "priority": {
+            "type": "keyword"
+        },
+        "status": {
+            "type": "keyword"
+        },
+        "reposonsible": {
+            "type": "keyword"
+        },
+        "report_geometry": {
+            "type": "nested",
+            "enabled":"false"
+        },
+        "dynamic_fields": {
+            "type": "nested"
+        },
+        "ignore_validation_errors": {
+            "type": "boolean"
+        },
+        "ignore_validation_comment": {
+            "type": "text"
+        },
+        "created_by": {
+            "type": "keyword"
+        },
+        "edited_by": {
+            "type": "keyword"
+        },
+        "definition_version": {
+            "type": "integer"
+        },
+        "valid_from": {
+            "type": "date"
+        },
+        "valid_to": {
+            "type": "date"
+        },
+        "prevent_history": {
+            "type": "boolean"
+        }
+    }
+}

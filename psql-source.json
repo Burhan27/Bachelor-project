@@ -1,0 +1,25 @@
+{
+  "name": "reporting-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "tasks.max": "1",
+    "database.hostname": "host.docker.internal",
+    "database.port": "5432",
+    "database.user": "postgres",
+    "database.password": "postgres",
+    "database.dbname": "platformdatabase",
+    "database.server.name": "reporting",
+    "plugin.name": "pgoutput",
+    "database.include.list": " ",
+    "database.history.kafka.bootstrap.servers": "kafka:9092",
+    "database.history.kafka.topic": "reporting",
+    "schema.include.list":"repo",
+    "table.include.list":"repo.report",
+    "column.exclude.list":"valid_to",
+    "transforms": "route",
+    "transforms.route.type": "org.apache.kafka.connect.transforms.RegexRouter",
+    "transforms.route.regex": "([^.]+)\\.([^.]+)\\.([^.]+)",
+    "transforms.route.replacement": "$3"
+  }
+}
+
